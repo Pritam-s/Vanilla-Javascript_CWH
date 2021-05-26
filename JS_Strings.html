@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Strings</title>
+
+</head>
+
+<body>  
+    <div class="container" id="literals">
+        Open up the browser console to see more.
+        <br>
+        There are many Js String function of which we will only see the 11 most useful ones as for now.
+        <ol>
+            <li> indexOf() </li>
+            <li> lastIndexOf()</li>
+            <li>slice()</li>
+            <li>substring()</li>
+            <li>substr()</li>
+            <li>replace()</li>
+            <li>toUpperCase()</li>
+            <li>toLowerCase()</li>
+            <li>concat()</li>
+            <li>trim()</li>
+            <li>charAt()</li>
+        </ol>
+
+    </div>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_WdTEui.json" mode="bounce" background="transparent"  speed="0.5"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+
+    <script>
+           let str=`Mickey said to Nikku "I don't know a single word about today's test" but before that he already gave the 'E-litmus test'. Now Nikku knew that he's lying.`
+           
+           console.log(str);
+
+
+           //locate the position of any substring in the string [First Occurence of a substring - "indexOf()"]
+           let position1 = str.indexOf('Nikku');
+           console.log(position1);
+
+
+           //locate the position of the last substring in the string [Last Occurence of a substring - "lastIndexOf()"] 
+           let position2 = str.lastIndexOf('Nikku');
+           console.log(position2);
+
+
+           //To get a substring from a string we can use slice() function
+           let slicestr = str.slice(1,17);
+           console.log(slicestr);
+           //However, there are other functions that help to get the substrings like- substring() & substr()
+           let substr = str.substring(1,17);
+           console.log(substr);
+           let substr1 = str.substr(1,17);
+           console.log(substr1);
+
+
+           //Replace a particular string to another string with the help of replace() function
+           let replaced = str.replace('Mickey', 'Riley');
+           console.log(replaced);
+
+
+           //Convert the whole strong to an uppercase or lowercase letters
+           console.log(str.toUpperCase());
+           console.log(str.toLowerCase());
+
+
+           //Concat any two strings using concat() function
+           let newString = str.concat(' This will be at the end of the string. New String.')
+           console.log(newString);
+
+
+           //The trim() method removes whitespace from both sides of a string.
+           let str2 = "       With    All      The     Whitespaces    ";
+           console.log(str2);
+           console.log(str2.trim());
+
+           //To extract any character from a string we use charAt() function.
+           var char3 = str.charAt(3);
+           console.log(char3);
+
+    </script>
+</body>
+
+</html>
