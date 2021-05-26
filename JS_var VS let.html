@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var VS let</title>
+</head>
+
+<body>
+    <div>
+
+    </div>
+
+    <script>
+        //the value of the variable gets easily changed and it can create a problem if we do not remember the initial value given the variable. It is because the scope of var is global here. 
+        var str1 = "This is a var string.";
+        console.log(str1);
+
+        var str1 = "This is the var replaced string"
+        console.log(str1)
+
+
+        //But if we declare the var inside any function, then its scope will remain under that function. 
+        var a = "OriginalVar"
+        console.log(a)
+        {
+            var a = "ModifiedVar"
+            console.log("This is the var's local scope - " + a)
+        }
+        console.log("This is the var's global scope - " + a)
+
+
+        //let
+        let str2 = "This is the let string."
+        //let does not allow duplicates. if we use same names for let, it throws an error.
+        //let str2 = "This is the let string2"
+
+
+        //let has block level scope. Hence it allows duplication in block level.
+        let str3 = 'OriginalLet'
+        console.log(str3)
+        {
+            let str3 = 'ModifiedLet'
+            console.log("This is the let's local scope - "+ str3)
+        }
+        console.log("This is the let's global scope - " + str3)
+    </script> 
+</body>
+</html>
