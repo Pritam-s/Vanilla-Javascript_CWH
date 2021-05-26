@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Template Literal</title>
+</head>
+
+<body>
+    <script>
+        //Template literals. These are written under ` sign.
+        let strliteral = `"Well, it wasn't that hard to you find you" said the 'joker'`;
+        console.log(strliteral);
+        
+        //$ symbol is used here to pick that particular string from the variable.
+        let name = 'Pritam';
+        let hobby = "Gyming";
+        let food = 'Quinoa'
+        let all = `${name} is a nice person and his favourite hobby is ${hobby} also he loves having ${food}.`;
+        console.log(all);
+
+        //Concatenating strings using template literal
+        let all2 = `${name} ${hobby} ${food}.`;
+        console.log(all2);
+    </script>
+</body>
+</html>
