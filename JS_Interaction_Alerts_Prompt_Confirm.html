@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction - Alerts, Confirm, Prompts</title>
+</head>
+
+<body>
+    <h2>Interaction - Alerts, Prompts, Confirm</h2>
+    <div>
+        <p>Alert, Prompt, and Confirm makes webpage more interactive and decide how the user will interact with the page.</p>
+    </div>
+    <div>
+        <h2>Alerts</h2>
+        <ul>
+            <li><strong>Alert does not return anything.</strong></li>
+            <li>The alert() method displays an alert box with a specified message and an OK button.</li>
+            <li>he alert box takes the focus away from the current window and forces the browser and forces the browser to read the message.</li>
+            <li>Do not overuse this method, as it prevents the user from accessing other parts of the page until the box is closed. </li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Prompts</h2>
+        <ul>
+            <li><strong>The prompt() method returns the input value if the user clicks "OK".</strong></li>
+            <li><strong>If the user clicks "cancel" the method returns null.</strong></li>
+            <li>A prompt box is often used if you want to input a value before entering a page.</li>
+            <li>When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Confirm</h2>
+        <ul>
+            <li><strong>The confirm() method returns true if the user clicked "OK", and false otherwise.</strong></li>
+            <li>The confirm() method displays a dialog box with a specified message, along with an OK and a Cancel button.</li>
+            <li>A confirm box is often used if you want the user to verify or accept something.</li>
+            <li>This method is only used if we want to double-check any task performed by the user.</li>
+        </ul>
+    </div>
+    
+    <script>
+        //PROMPT ***********
+        //prompt("Enter your name to continue.")
+
+
+        //CONFIRM ***********
+        //confirm("Do you want to delete this Code?");
+
+
+        //ALERTS ***********
+        //alert("Success : The Code has been deleted.");
+
+        let question = prompt("Enter your name");
+        if (question) {
+            let sure = confirm("Do you want to Delete the file ? ");
+            if (sure === true) {
+                alert("Your file has been deleted succesfully.");
+            }
+            if (sure === false) {
+                alert("The operation has been cancelled.");
+            }
+        }
+         else {
+            alert("No input detected");
+        }
+    </script>
+</body>
+</html>
