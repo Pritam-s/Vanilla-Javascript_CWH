@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+    <h2>Functions</h2>
+    <div>
+        <ul>
+            <li>Functions facilitate the code reusability</li>
+            <li>Also, we can increase more number of parameters in the JavaScript functions without writing the code again.</li>
+        </ul>
+    </div>
+    
+    <script>
+        let name = "Pritam";
+        let name1 = "Awdhoot";
+        let name2 = "Suhani";
+        let name3 = "Shailendra";
+        console.log(name + " is a good boy.");
+        console.log(`${name1} is a good boy.`); //using template literal.
+        console.log(name3 + " is my jiju.");
+        console.log(`${name2} is a good girl`); //using template literal.
+
+
+        //Functions ************
+       
+        //Functions facilitate the code reusability
+        //Also, we can increase more number of parameters in the JavaScript functions without writing the code again.
+        function age(years) {
+            console.log(years + " is my age");
+            console.log(`${years} is my age in template literal method`);     //Using Template literal
+        }
+
+        let years1 = 45;
+        let years2 = 23;
+        let years3 = 49;
+        let years4 = 98;
+
+        age(years1);
+        age(years2);
+        age(years3);
+        age(years4);
+
+
+        //Passing more parameters
+        function hello(hobby, food=" Watermelon is my favourite food", roll =" Roll no is yet not given") {
+            console.log(hobby + " is my favourite hobby" + food + roll);     //here parameter 'food' & 'roll' have predefined value and it's called default value. 
+        }
+
+        let hobby1 = "gaming";
+        let hobby2 = "coding";
+        let hobby3 = "writing";
+        let hobby4 = "singing";
+
+        hello(hobby1);
+        hello(hobby4);
+
+
+        //return 
+        //not very important 
+        function sum(a, b, c) {
+            let d = a + b + c;
+            return d;            
+        }
+        let returnVal = sum(3,4,5);
+        console.log(returnVal);
+        
+    </script>
+</body>
+</html>
