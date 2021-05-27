@@ -46,30 +46,54 @@
 
 
     <script>
-        //OBJECTS
+        //PRIMITIVE DATA TYPES ****
+        let myVar = 34;
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+
+
+        //OBJECTS ****
         //this is how we define an 'object'
         let employee = {
             name: "Pritam",
             salary: 10000,
             food: "quinoa",
             hobby: "Gym",
-            "food 2": "Watermelon"
+            "food 2": "Watermelon",
+            "Operating System": "Zorin OS 16",
         }
         console.log(employee);
+        console.log(employee.food);
+        console.log(employee.hobby);
+        console.log(employee["food 2"]);
+        console.log(employee["Operating System"]); //if there is an space between key names, then we have to call it under '[ ]'in console.log function. calling it via ' . ' dot method gives an error.
 
 
-        //ARRAYS
+        //ARRAYS ****
         //There is a special kind of object known as 'arrays'
         //The JavaScript Array class is a global object that is used in the construction of arrays; which are high level, list-like objects.
         // An array is a special variable, which can hold more than one value at a time. 
-        let names = [1,2,4,"Nikku",undefined,null];
+        let names = [101,2,4,"Nikku",undefined,null,"Hello MG"];
         console.log(names);
+        console.log(names[3]);
+        console.log(names[4]);
+        console.log(names[1]);
+        console.log(names[6]);
 
         //We can also create arrays with the help of a 'new' keyword.
+        //'new' keyword is used to create a new object. & array is an object.
         //arrays created using 'new' keyword should have '()' as the constructor instead of '[]', otherwise it throws an error.
         let age = new Array(25,32,50,45,67,68,98);
         console.log(age);
         console.log(age.sort()); //sort function
+        console.log(age.push("Cilian")); //push funtion to add a new item in an array.
+        console.log(age.push(50055));
+        console.log(age);
+        
+        let empty=new Array(15); //empty array
+        console.log(empty);
     </script>
 </body>
 
