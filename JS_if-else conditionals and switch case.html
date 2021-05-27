@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else conditionals & switch case</title>
+</head>
+
+<body>
+    <div>
+        <h3>If else (else-if ladder) & switch case statements :-</h3>
+        <p>Open up the browser console.</p>
+
+        <ol>
+            <li>
+                if (condition) {
+                
+                } 
+                else-if (condition) {
+
+                }
+                else {
+                    
+                }
+            </li>
+            <li>
+                switch (key) {
+                    case value:
+                        
+                        break;
+                
+                    default:
+                        break;
+                }
+                <ul>
+                    <li> switch case statement - Switch case statement should have a break after every case else the program gets executed till the last case. </li>
+                    <li>if the value of any of the cases doesn't matches, the default values is chosen.</li>
+                    <li> in emmet if we type "switch", we get two switch. Select the second one since it have a default syntax.</li>
+                </ul>                      
+            </li>
+        </ol>
+    </div>
+
+
+    <script>
+        let a = 4;
+        if (a > 18) {
+            console.log("You can have a drink");
+        }
+        else if (a == 8) {
+            console.log('age is 8');
+        }
+        else if (a == 12) {
+            console.log("age is 12 ");
+        }
+        else {
+            console.log("You can have a cold-drink");
+        }
+
+
+        //switch case statement - Switch case statement should have a break after every case else the program gets executed till the last case. 
+        //if the value of any of the cases doesn't matches, the default values is chosen.
+        //in emmet if we type "switch", we get two switch. Select the second one since it have a default syntax.
+        const age = 67;
+        switch (age) {
+            case 54:
+                console.log("The age is 54");
+                break;
+        
+            case 76:
+                console.log("The age is 76");
+                break;
+        
+            case 677:
+                console.log("The age is 67");
+                break;
+        
+            case 100:
+                console.log("The age is 100");
+                break;
+        
+            default:
+                console.log("The age is none of the above.");
+                break;
+        }
+
+
+    </script>
+</body>
+
+</html>
