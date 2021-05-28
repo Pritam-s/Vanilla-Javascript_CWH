@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating The DOM</title>
+</head>
+
+<body>
+    <h2>Navigating the DOM</h2>
+    <div>
+        <h3>DOM :-</h3>
+        <p>The HTML DOM (Document Object Model) is a standard object model and programming interface for HTML</p>
+        <ul>
+            <li>The HTML elements as objects</li>
+            <li>The properties of all HTML elements</li>
+            <li>The methods to access all HTML elements</li>
+            <li>The events for all HTML elements</li>
+        </ul>
+        <p>In other words: <strong>The HTML DOM is a standard for how to get, change, add, or delete HTML elements.</strong></p>
+    </div>
+
+    <div>
+        <h3>Different types of selectors for DOM (Most preferred)</h3>
+        <ol>
+            <li>document.getElementById()</li>
+            <li>document.getElementsByClassName()</li>
+            <li>document.getElementsByName()</li>
+            <li>document.getElementsByTagName()</li>
+        </ol>       
+    </div>
+
+    <main id="main">
+        <nav id="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis iure dolor minus, modi harum quod fuga amet sit totam commodi repudiandae itaque rerum optio. Officia mollitia unde doloremque, et ad, harum hic nesciunt voluptates voluptatibus illo id ex architecto eius dolores? Consequuntur pariatur blanditiis recusandae facilis vero tenetur delectus quibusdam.</div>
+        </section>
+    </main>
+
+
+    <script>
+        let main = document.getElementById("main");
+        console.log(main);
+        
+
+        let navbar = document.getElementById("navbar");
+        console.log(navbar);
+    </script>
+</body>
+</html>
