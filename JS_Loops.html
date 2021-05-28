@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+    <h2>for, while, forEach, do while Loops</h2>
+    <div>
+        <p>We have different types of loops in JavaScript. Some of them are :-</p>
+        <ul>
+            <li>For loop [Legacy]</li>
+            <li>For-Each loop </li>
+            <li>For-In loop (Specially for Objects) [preffered]</li>
+            <li>For-Of loop (Specially for Arrays) [preffered]</li>
+        </ul>
+    </div>
+
+    <script>
+        //Looping using "for (LEGACY)" method.
+        let i=0;
+        for (let i = 0; i < 5; i++) {
+            console.log(i);           
+        }
+
+        for (let j = 0; j < 10; j++) {
+            console.log(`${j} is the value of j`);           
+        }
+
+
+        //ARRAY ***********
+        //LOOPING IN ARRAY using "for of" loop 
+        let friends = new Array ("Suhani","Nikku","Awdhoot","Shailendra");
+        for (const elements of friends) {
+            console.log(`${elements} is my best friend.`);
+            // console.log(elements);
+        }
+        
+
+        let games = ["COD","GTA","Farcry","WatchDogs","SleepingDogs"];
+        for (const titles of games) {
+            console.log(`${titles} is my favorite game.`);
+        }
+
+
+
+        //OBJECTS ************
+        //LOOPING IN OBJECTS using "for in" loop
+        let students = {
+            name : "Pritam",
+            rollno : 72,
+            standard : 5,
+            class : 10,
+        }
+        for (key in students) {
+            console.log(`The ${key} of student is ${students[key]}`);
+        }
+
+    </script>
+</body>
+</html>
