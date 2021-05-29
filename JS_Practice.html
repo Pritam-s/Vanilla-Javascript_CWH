@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body style="font-family:Helvetica, sans-serif;">
+    <h3>This is the practice for JS</h3>
+    
+
+    <script>
+        //1. JS Strings ***************
+        console.log("********* STRINGS START *********");
+        let str1 = "Hi, How are you ?";
+        console.log(str1);
+
+        let str2 = "I hope you are doing well."
+        console.log(str2);
+
+        let str3 = (`${str1} Nice to meet you ${str2}`);
+        console.log(str3);
+
+        console.log(str2.indexOf("are"));
+        console.log(str2.lastIndexOf("ope"));
+        console.log(str3.slice(9,21));
+
+        console.log(str3.substring(21,55) + ". This is substring.");
+        console.log(str3.substr(21,55)+ ". This is the substr");
+        console.log(str3.concat(" This is the Concatenated string."));
+
+        console.log(str3.replace("Nice","Pleasure"));
+        console.log(str3.toLowerCase());
+        console.log(str3.toUpperCase());
+        
+        console.log(str3.trim());
+        console.log(str3.charAt(56));
+        console.log("********* STRINGS END *********");
+        console.log("\n");
+
+
+        //2. JS Scope, If-Else and Switch Case ************
+        console.log("********* JS Scope, If-Else and Switch Case STARTS *********")
+        let name = "Pritam";
+        if (name === "Nikku") {
+            console.log("The name matches ");
+        } else {
+            console.log("The name does not match");
+        }
+
+        let number = 56563;
+        if (number > 100000) {
+            console.log("The given number is greater than 1000 and is accepted.")
+        } else {
+            console.log("The given number is lesser than 1000 and is not accepted.");
+        }
+
+        let age = 18;
+        switch (age) {
+            case 41:
+                console.log("The age is 41 and is greater.")
+                break;
+            
+            case 18:
+                console.log("The age is 18 and is accepted");
+                break;
+
+            default:
+                console("No value matches");
+                break;
+        }
+
+
+        let game = "Ride2";
+        switch (game) {
+            case "Farcry":
+                console.log("The game is Farcry and does not matches");
+                break;
+
+            case "WatchDogs":
+                console.log("The game is WatchDogs and does not matches");
+                break;
+
+            case "SleepingDogs":
+                console.log("The game is SleepinDogs and does not matches");
+                break;
+
+            case "GTA V":
+                console.log("The game is GTA V and it matches");
+                break;
+            
+            case "COD":
+                console.log("The game is COD and it matches");
+                break;
+            
+            default:
+                console.log("None of the games matches the given game title.")
+                break;
+        }
+        
+        console.log("********* JS Scope, If-Else and Switch Case ENDS *********")
+        console.log("\n");
+
+
+        // ARRAYS & OBJECTS ************
+
+        // OBJECT
+        console.log("********* ARRAYS & OBJECTS START *********");
+        let student = {
+            name: "Pritam",
+            rollno: 72,
+            std: "5th",
+            div: "B",
+            "Special Name": "Olof meister",
+        }
+        console.log(student);
+        console.log(student["rollno"]);
+        console.log(student.rollno);
+        console.log(student["Special Name"]);
+
+
+        //ARRAYS
+        let random = [123, 456, 567, 9898, "Pritam", true, undefined, null, "Suhani"];
+        console.log(random);
+        console.log(random.sort());
+        random.push("This is the added string");
+        console.log(random);
+
+
+        let random2 = new Array(232, 43435, 342, 5445, "Nikkua", "Shailendra", "Awdhoot", null, undefined, true, 3343, "89574954", "7756956", false);
+        console.log(random2);
+        random2.sort();
+        console.log(random2);
+
+
+
+        console.log("********* ARRAYS & OBJECTS ENDS *********");
+        console.log("\n");
+
+
+        // FUNCTIONS IN JS ***************
+        console.log("********* FUNCTIONS IN JS STARTS*********");
+        function greet(people) {
+            console.log(`Good Morning ${people}.`);
+        }
+        let people1="Nikku";
+        let people2 = "Suhani";
+        let people3 = "Nimmy";
+        
+        greet(people1);
+        greet(people2);
+        greet(people3);
+
+
+        function work(person, job, company="Mozilla", project="ARa") {
+            console.log(`${person} will be working as a ${job} at the data centre of ${company} & will be building project ${project}.`);
+        }
+        let person1 = "Pritam";
+        let person2 = "Nishita";
+        let person3 =  "Awdhoot";
+        let person4 = "Vicky";
+        let job1 = "Developer";
+        let job2 = "Professor";
+        let job3 = "Human Interaction";
+        let job4 = "Sales manager";
+
+        work(person1,job1);
+        work(person2,job2);
+        work(person3,job3);
+        work(person4,job4);
+
+        console.log("********* FUNCTIONS IN JS ENDS*********");
+        console.log("\n");
+        // FUNCTIONS IN JS **************
+        
+        
+        // INTERACTION IN JS **************
+        console.log("********* INTERACTIONS IN JS STARTS*********");
+/*         let A = prompt("Please enter your username.");
+        if (A != null) {
+            let confirmation = confirm("Do you really want to download the file ?") && console.log("Do you really want to download the file");
+            if (confirmation == true) {
+                alert("The file has been downloaded.");
+                console.log("The file has been downloaded.");
+            } else {
+                alert("The file has been kept back.")
+                console.log("The file has been kept back.")
+            }
+        } else {
+            alert("Operation Cancelled.");
+            console.log("Operation Cancelled.");
+        } */
+
+
+        console.log("********* INTERACTIONS IN JS ENDS*********");
+        console.log("\n");
+        // INTERACTION IN JS ENDS **************
+        
+        
+        
+        // for, while, forEach, Do While Loops *************
+        console.log("********* for, while, forEach, Do While Loops STARTS *********");
+
+        // LEGACY
+        for (let i = 0; i < 12; i++) {
+            console.log(`The value of i is ${i}.`);
+        }
+
+        //OBJECT (FOR IN)
+        let pet = {
+            name: "Mithoo",
+            type: "Fauna",
+            family: "birds",
+            age: 4,
+        }
+        
+        for (key in pet) {
+            console.log(`The ${key} of my pet is ${pet[key]}.`);
+        }
+
+
+        //ARRAYS (FOR OF)
+        let flowers = ["Rose","Marigold","Hibiscus","Lotus",997, 6574, true, 793, 4566, 92834, null, false, "Chillies",500, undefined];
+
+        for (iterator of flowers) {
+            console.log(`The elements of flowers are ${iterator}.`);
+        }
+        
+        let randomness = [123,487654,true, 32420, 90890, 980765, 544, 33, 10000, false, "Moses", "Batman", undefined, "flowers", "mangoes", null];
+        for (iterator of randomness) {
+           let B = (`The elements of the array randomness is ${iterator}`);
+        }
+
+        console.log("********* for, while, forEach, Do While Loops ENDS *********");
+        // for, while, forEach, Do While Loops *************
+        
+
+
+    </script>
+</body>
+</html>
