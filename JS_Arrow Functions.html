@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+
+<body style="font-family: Helvetica, sans-serif;">
+    <h3>JavaScript's Arrow Functions & Lexical 'this'.</h3>
+    <div>Please open up the console.</div>
+    <p>Strings, Arrays, Functions inside an Object.</p>
+    
+    <script>
+        // FUNCTION (LEGACY)
+        function greet() {
+            console.log("This is normal function method");
+        }
+        greet();
+
+
+        // FUNCTION (ARROW FUNCTION)
+        let greet2 = ()=> console.log("This is the shortest arrow function method");
+        greet2();
+
+
+        let person = ()=> console.log("Hello person");
+        person();
+
+
+        // Strings, Arrays, Functions inside an Object.
+        let obj1 = {
+            names : ["Nikkua","Awdhootwa", "Suhaniya","Shailendrawa", "Nimmyiya"],
+            speak : function() {
+                this.names.forEach(element => {
+                    console.log("The name is "+ element +".")
+                });
+            }
+        }
+        obj1.speak();
+
+
+        // Strings, Arrays, Functions inside an Object.
+           let random = {
+            ratings: "highly rated.",
+            games : ["COD","Farcry","GTA","Prince of Persia","WatchDogs"],
+            titles : function(){
+                this.games.forEach(element => {
+                    console.log(`One of The best gaming title is ${element} and is ${this.ratings}`);
+                });
+            }
+        }
+        random.titles(); 
+
+
+
+
+        // 'flowers' is an object. Every object has a key value pair. i.e. ' key:value '. there are 4 elements total i.e 2 normal strings 'comment1 & comment2' , 1 array 'variants' and 1 function 'types'. NOTE :- we can also write the function 'types' without the function keyword. eg:- types(){    }.
+        let flowers = {
+            comment1 : "The flowers are fresh and beautiful",
+            comment2 : "is my favorite.",
+            variants : ["Rose", "Jasmine","Marigold", "Lily", "Lotus","Mogra"],
+            types : function () {
+                this.variants.forEach(element => {
+                    console.log(`${this.comment1}. ${element} ${this.comment2}`) //Here, the 'element' is the name of the 'iterator' and is inside the function itself. But the other two i.e. 'comment1' and 'comment2' are outside the function i.e 'types'. Hence, lexical 'this' is required to target them.
+                });
+            }
+        }
+        flowers.types();
+    </script>
+</body>
+</html>
