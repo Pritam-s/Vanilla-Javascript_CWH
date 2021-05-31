@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+
+    <style>
+        #btn{
+            padding: 1rem;
+            border-radius: 5px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+
+<body style="font-family: Helvetica, sans-serif;">
+    <div>
+        <h3 id="h3">JS Events and Events Listeners</h3>
+        <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores similique rem enim maiores modi, ipsa quod ipsam voluptatibus mollitia labore molestias tenetur sed sequi nulla quae iste sit dicta optio magni praesentium sapiente, nihil minus non. Neque facere aliquid voluptates at vel consequatur dolores magni fugiat repellendus, temporibus placeat omnis deleniti tenetur delectus quo rerum dolore odio ut. Harum itaque tenetur facere aliquid alias mollitia ipsam saepe dolor ea voluptatem fugit veritatis quod minus distinctio inventore eaque, corporis in corrupti? Quae distinctio rerum nobis fuga blanditiis rem inventore modi optio exercitationem. Incidunt ipsa similique quod reiciendis delectus mollitia ipsum rem porro quo magnam! Qui nihil ad suscipit molestiae rerum ipsa temporibus libero vitae mollitia, laborum odio! Quas sunt odio sit architecto quo, nesciunt, ut facilis fugiat vitae in nemo officia recusandae exercitationem culpa. Suscipit incidunt architecto esse fugit expedita non veritatis ex autem, harum doloremque repellendus rerum voluptate ratione molestiae corporis similique iusto in ut.</p>
+        <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    </div>
+
+    <div>
+        <h3>1. Here is a list of some common HTML events.</h3>
+        <ul>
+            <li>Onchange -  An HTML element has been changed.</li>
+            <li>Onclick - The user clicks an HTML element.</li>
+            <li>Onmouseover -   The user moves the mouse over an HTML element.</li>
+            <li>Onmouseout -The user moves the mouse away from an HTML element.</li>
+            <li>Onkeydown - The user pushes a keyboard key.</li>
+            <li>Onload - The browser has finished loading the page.</li>
+            <li><a href="https://makeawebsitehub.com/the-html-5-mega-cheat-sheet/">HTML CheatSheet.</a></li>
+            <li><a href="https://www.w3schools.com/tags/ref_eventattributes.asp"> HTML Events Attributes. (List of all HTML Events.)</a></li>
+            <li><a href="https://www.w3schools.com/js/js_htmldom_events.asp"> DOM Events</a></li>
+            <li><a href="https://www.w3schools.com/js/js_htmldom_eventlistener.asp"> JS HTML Events Listeners </a></li>
+        </ul>
+        <br>
+        <h3>2. addEventListener - 'EventListener'</h3>
+        <p><strong> NOTE :-  We don't use the "on" prefix for the event; use "click" instead of "onclick". </strong></p>
+        <ul>
+            <li>change</li>
+            <li>click</li>
+            <li>mouseover</li>
+            <li>etc.</li>
+        </ul>
+        <p><strong> Syntax :- </strong>element.addEventListener(event, function, useCapture);</p>
+    </div>
+
+    <script>
+            let para = document.getElementById("para");
+            para.addEventListener("mouseover",function run() {
+                console.log("MouseIn");
+            })
+            para.addEventListener("mouseout",function run() {
+                console.log("MouseOut");
+            })
+
+
+        function toggleHide() {
+            let btn = document.getElementById("btn");
+            let para = document.getElementById("para");
+
+            if (para.style.visibility!="hidden") {
+                para.style.visibility = "hidden";
+            } else {
+                para.style.visibility="visible";
+            }
+        }
+     
+    </script>
+</body>
+</html>
