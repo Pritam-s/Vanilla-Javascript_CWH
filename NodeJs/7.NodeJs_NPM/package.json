@@ -1,0 +1,17 @@
+{
+  "name": "npm_intro",
+  "version": "1.0.0",
+  "description": "introduction to npm",
+  "main": "npm_intro.js",
+  "scripts": {
+    "test": "hello"
+  },
+  "keywords": [
+    "awesome"
+  ],
+  "author": "Pritam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

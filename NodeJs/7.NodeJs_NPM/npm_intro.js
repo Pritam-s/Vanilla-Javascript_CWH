@@ -1,0 +1,1 @@
+console.log("The package has to be installed via terminal");
