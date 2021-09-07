@@ -14,4 +14,4 @@ function average(arr){
 //     repo: "GitHub"
 // }
 
-module.exports.name = "Harry";
+module.exports.name = "Pritam";
