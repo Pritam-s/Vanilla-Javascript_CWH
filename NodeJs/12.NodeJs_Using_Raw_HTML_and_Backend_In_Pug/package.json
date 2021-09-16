@@ -1,0 +1,18 @@
+{
+  "name": "12.nodejs_using_raw_html_and_backend_in_pug",
+  "version": "1.0.0",
+  "description": "HTML, CSS & Backend in pug",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "server": "nodemon server.js"
+  },
+  "author": "Pritam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12",
+    "pug": "^3.0.2"
+  }
+}
