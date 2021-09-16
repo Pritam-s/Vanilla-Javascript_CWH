@@ -1,0 +1,19 @@
+{
+  "name": "11.nodejs_using_raw_html_in_pug",
+  "version": "1.0.0",
+  "description": "Using raw HTML in pug template engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "raw",
+    "HTML"
+  ],
+  "author": "Pritam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  }
+}
