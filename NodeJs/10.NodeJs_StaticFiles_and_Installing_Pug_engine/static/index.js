@@ -1,0 +1,1 @@
+console.log("This is the static file serving in nodejs and express.");
