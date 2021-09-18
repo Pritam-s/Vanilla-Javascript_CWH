@@ -27,8 +27,18 @@ app.get('/', function(req, res){
 
 app.post('/', function(req, res){
 
-    console.log(req.body) // Gets you the output as an object in the terminal
+    // console.log(req.body) 
+    // Gets you the output as an object in the terminal
 
+    names = req.body.names
+    age = req.body.age
+    gender = req.body.gender
+    address = req.body.address
+    more = req.body.more
+
+
+    let outputToWrite = `the name of the client is ${names}, ${age} years old, ${gender}, residing at ${address}. More about him/her: ${more}`
+    fs.writeFileSync('output.txt', outputToWrite)
     const params = {'message': 'Your form has been submitted successfully'}
     res.status(200).render('index.pug', params);
 })
