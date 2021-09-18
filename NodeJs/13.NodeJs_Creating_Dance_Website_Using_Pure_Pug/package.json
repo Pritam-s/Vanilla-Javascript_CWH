@@ -1,0 +1,16 @@
+{
+  "name": "13.nodejs_creating_dance_website_using_pure_pug",
+  "version": "1.0.0",
+  "description": "Building the dance website using pure pug",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pritam",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12",
+    "pug": "^3.0.2"
+  }
+}
