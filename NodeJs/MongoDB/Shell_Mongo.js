@@ -49,6 +49,8 @@ db.items.find({price:{$gte:20000}})
 
 db.items.deleteOne({price:{$gte:20000}})
 
+db.item.deleteMany({price:{$gte:20000}})
+
 
 
 // CRUD (Create, Read, Update, Delete)
