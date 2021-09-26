@@ -1,14 +1,11 @@
 {
-  "name": "mongoose_intro",
+  "name": "mongodb",
   "version": "1.0.0",
-  "description": "Npm intro",
-  "main": "Mongoose_Intro.js",
+  "description": "Mongoos Intro",
+  "main": "Shell_Mongo.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Pritam",
-  "license": "ISC",
-  "dependencies": {
-    "mongoose": "^6.0.7"
-  }
+  "license": "ISC"
 }
