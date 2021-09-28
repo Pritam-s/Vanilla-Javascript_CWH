@@ -1,0 +1,33 @@
+//- page-a.pug
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+    style 
+        include ../static/styles.css
+        include ../static/stylesContact.css
+
+block content
+    h1 Welcome to the contact page.
+    section 
+        div.formstyle
+            input(type="text" ,name="name" ,placeholder="Enter your name")
+
+            input(type="email", name="email", placeholder="Enter your email-id")
+
+            input(type="text", name="phone", placeholder = "Enter your phone number")
+
+            input(type="text", name="address", placeholder = "Enter your address")
+
+        button 
+            |submit
+
+
+
+
+        
+
+        
+

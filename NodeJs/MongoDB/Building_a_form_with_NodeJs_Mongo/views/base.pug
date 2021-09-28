@@ -1,0 +1,17 @@
+//- layout.pug OR base.pug
+html
+  head
+    title Website using pure PUG and MongoDB
+    block scripts
+    block style 
+  body
+    nav.navbar
+        ul
+            li #[a(href="/") Home]
+            li #[a(href="/contact") Contact]
+            li #[a(href="/about") About]
+            li #[a(href="/services.pug") Services]
+    block content
+    block foot
+      #footer
+        p some footer content inside the base.pug
