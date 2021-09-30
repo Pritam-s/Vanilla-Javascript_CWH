@@ -1,0 +1,16 @@
+extends layout.pug
+
+block style
+    style 
+        include ../static/styles.css
+        include ../static/contactStyles.css
+    
+block content
+    h1 This is the contact page of my practice website
+
+    form(action="post" method="method")
+        input(type="text", name="name", placeholder = "Enter your name")
+        input(type="text", name="address", placeholder ="Enter your address")
+        input(type="tel", name="phone", placeholder = "Enter your phone number")
+        input(type="number", name="pincode", placeholder = "Enter your pincode")
+        input(type="button", value="submit")
